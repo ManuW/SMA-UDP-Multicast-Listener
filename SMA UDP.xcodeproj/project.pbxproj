@@ -19,10 +19,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		56A8C24A2FF11734002AE7BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		56F1C0A12FD73F0C0027B252 /* SMA UDP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SMA UDP"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		561968502FEFB94E00039BA0 /* Documentation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Documentation;
+			sourceTree = "<group>";
+		};
 		56F1C0A32FD73F0C0027B252 /* SMA UDP */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "SMA UDP";
@@ -44,6 +50,8 @@
 		56F1C0982FD73F0C0027B252 = {
 			isa = PBXGroup;
 			children = (
+				56A8C24A2FF11734002AE7BD /* README.md */,
+				561968502FEFB94E00039BA0 /* Documentation */,
 				56F1C0A32FD73F0C0027B252 /* SMA UDP */,
 				56F1C0A22FD73F0C0027B252 /* Products */,
 			);
@@ -73,6 +81,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				561968502FEFB94E00039BA0 /* Documentation */,
 				56F1C0A32FD73F0C0027B252 /* SMA UDP */,
 			);
 			name = "SMA UDP";
@@ -90,7 +99,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2650;
-				LastUpgradeCheck = 2650;
+				LastUpgradeCheck = 2700;
 				TargetAttributes = {
 					56F1C0A02FD73F0C0027B252 = {
 						CreatedOnToolsVersion = 26.5;
@@ -161,6 +170,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 56N29E39VY;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -186,6 +196,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -225,6 +236,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 56N29E39VY;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -243,6 +255,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -250,7 +263,9 @@
 		56F1C0A92FD73F0C0027B252 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 56N29E39VY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,7 +278,9 @@
 		56F1C0AA2FD73F0C0027B252 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 56N29E39VY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
